@@ -16,9 +16,9 @@ function generatePassword() {
   var numbers = "0123456789";
   var symbols = "!@#$%^&*()_+-=";
 
-  var length = parseInt(prompt("Enter password length (must be between 6 and 128 characters):"));
+  var length = parseInt(prompt("Enter password length (must be between 8 and 128 characters):"));
   if (isNaN(length) || length < 8 || length > 128) {
-    alert("Invalid password length. Please enter a number between 6 and 128.");
+    alert("Invalid password length. Please enter a number between 8 and 128.");
     return "";
   }
 
